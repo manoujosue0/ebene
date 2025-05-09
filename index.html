@@ -2,83 +2,78 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>NOUVEL EBÈNE - Luxury Real Estate</title>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Playfair+Display:wght@600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css" />
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Open+Sans&display=swap" rel="stylesheet">
 </head>
 <body>
 
   <!-- Navbar -->
-  <nav class="navbar">
+  <header class="navbar">
     <div class="navbar-left">
-      <img src="logo.png" alt="NOUVEL EBÈNE Logo" class="logo" />
+      <a href="#" class="logo-text">NOUVEL EBÈNE</a>
     </div>
-
     <div class="navbar-center">
-      <input type="text" class="search-bar" placeholder="Rechercher un bien de luxe..." />
-      <button class="search-button">&#128269;</button>
+      <input type="text" placeholder="Search location or property type..." class="search-bar" />
     </div>
-
     <div class="navbar-right">
-      <a href="#">Rechercher</a>
       <a href="#">Favoris</a>
       <a href="#">Messages</a>
       <a href="#">Estimer</a>
       <a href="#">Profil</a>
       <a href="#"><img src="fr-flag.png" alt="FR" class="flag-icon" /></a>
     </div>
-  </nav>
+  </header>
 
-  <!-- Hero Section -->
-  <header class="hero">
+  <!-- Hero Section with Video -->
+  <section class="hero">
     <video class="hero-video" autoplay muted loop>
-      <source src="your-video.mp4" type="video/mp4">
-      Your browser does not support the video tag.
+      <source src="your-video.mp4" type="video/mp4" />
     </video>
     <div class="hero-text">
       <h1>Discover Timeless Luxury, Rooted in African Excellence</h1>
       <p>Explore the finest luxury homes that blend modern design with African heritage.</p>
       <a href="#properties" class="cta-btn">View Properties</a>
     </div>
-  </header>
+  </section>
 
   <!-- Properties Section -->
-  <section id="properties">
+  <section id="properties" class="section">
     <h2>Our Luxury Properties</h2>
     <div class="property-list">
       <div class="property-card">
-        <img src="property1.jpg" alt="Luxury Property">
+        <img src="property1.jpg" alt="Luxury Property" />
         <h3>5-Bedroom Villa in Abidjan</h3>
         <p>Price: $1.5 Million</p>
         <a href="#" class="cta-btn">View Details</a>
       </div>
-      <!-- Add more properties as needed -->
+      <!-- More property cards -->
     </div>
   </section>
 
   <!-- About Us -->
-  <section id="about-us">
+  <section id="about-us" class="section">
     <h2>About Us</h2>
     <p>At NOUVEL EBÈNE, we blend modern luxury with the rich heritage of Africa to create properties that stand the test of time. Our mission is to provide discerning clients with homes that reflect strength, beauty, and enduring value.</p>
   </section>
 
-  <!-- Contact Us -->
-  <section id="contact-us">
+  <!-- Contact -->
+  <section id="contact-us" class="section">
     <h2>Contact Us</h2>
     <form action="submit-form.php" method="POST">
       <label for="name">Name:</label>
-      <input type="text" id="name" name="name" required>
+      <input type="text" id="name" name="name" required />
       <label for="email">Email:</label>
-      <input type="email" id="email" name="email" required>
+      <input type="email" id="email" name="email" required />
       <label for="message">Message:</label>
       <textarea id="message" name="message" required></textarea>
       <button type="submit" class="cta-btn">Submit</button>
     </form>
   </section>
 
-  <!-- Blog/Insights -->
-  <section id="blog">
+  <!-- Blog -->
+  <section id="blog" class="section">
     <h2>Latest Insights</h2>
     <div class="blog-post">
       <h3>Luxury Living in Côte d'Ivoire</h3>
@@ -88,7 +83,7 @@
   </section>
 
   <!-- Testimonials -->
-  <section id="testimonials">
+  <section id="testimonials" class="section">
     <h2>What Our Clients Say</h2>
     <div class="testimonial">
       <p>"The level of craftsmanship and attention to detail is unparalleled. I am proud to call my property from NOUVEL EBÈNE my home." - Jeanine</p>
