@@ -228,113 +228,62 @@ form button {
   font-size: 14px;
 }
 
-/* ===== Featured Cities Section ===== */
-.cities {
-  background-color: #fff;
+/* Featured Cities Section */
+#featured-cities {
   padding: 60px 20px;
-  max-width: 1200px;
-  margin: auto;
+  background-color: #f9f9f9;
+}
+
+.section-title {
   text-align: center;
-}
-
-.cities h2 {
   font-size: 32px;
+  color: #1d3b2a;
   margin-bottom: 40px;
-  color: #14532d;
-  font-family: 'Playfair Display', serif;
+  font-weight: 700;
 }
 
-.city-grid {
+.cities-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
-  gap: 25px;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 30px;
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
-/* City Card */
 .city-card {
   position: relative;
   overflow: hidden;
-  border-radius: 12px;
-  height: 200px;
+  border-radius: 16px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
   cursor: pointer;
-  background-color: #fff;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
   transition: transform 0.3s ease;
 }
 
 .city-card img {
   width: 100%;
-  height: 100%;
+  height: 250px;
   object-fit: cover;
-  transition: transform 0.3s ease;
+  display: block;
+  transition: transform 0.4s ease;
 }
 
 .city-card:hover img {
-  transform: scale(1.05);
+  transform: scale(1.1);
 }
 
-.city-name {
+.city-overlay {
   position: absolute;
-  bottom: 15px;
-  left: 15px;
-  font-size: 18px;
-  font-weight: bold;
-  color: #fff;
-  text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.6);
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 20px;
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.6), transparent);
+  color: white;
+  text-align: left;
 }
 
-/* Layout Variants */
-.card-large {
-  grid-column: span 2;
-  grid-row: span 2;
-  height: 400px;
-}
-
-.card-wide {
-  grid-column: span 2;
-  height: 200px;
-}
-
-/* ===== Responsive Design ===== */
-@media (max-width: 768px) {
-  .navbar {
-    flex-direction: column;
-    align-items: flex-start;
-    padding: 15px 20px;
-  }
-
-  .navbar-center {
-    width: 100%;
-    margin: 10px 0;
-  }
-
-  .navbar-center .search-bar {
-    width: 100%;
-  }
-
-  .navbar-right {
-    width: 100%;
-    display: flex;
-    flex-wrap: wrap;
-    gap: 10px;
-  }
-
-  .hero-text h1 {
-    font-size: 28px;
-  }
-
-  .hero-text p {
-    font-size: 16px;
-  }
-
-  .section h2 {
-    font-size: 26px;
-  }
-
-  .card-large,
-  .card-wide {
-    grid-column: span 1 !important;
-    grid-row: span 1 !important;
-    height: 200px;
-  }
+.city-overlay h3 {
+  margin: 0;
+  font-size: 20px;
+  font-weight: 600;
 }
