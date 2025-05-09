@@ -1,89 +1,109 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>NOUVEL EBÈNE - Luxury Real Estate</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>NOUVEL EBÈNE - Luxury Real Estate</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Open+Sans&display=swap" rel="stylesheet">
 </head>
 <body>
-  
-    <!-- Header -->
-    <header id="header">
-        <div class="hero">
-            <video class="hero-video" autoplay muted loop>
-                <source src="your-video.mp4" type="video/mp4">
-            </video>
-            <div class="hero-text">
-                <h1>Discover Timeless Luxury, Rooted in African Excellence</h1>
-                <p>Explore the finest luxury homes that blend modern design with African heritage.</p>
-                <a href="#properties" class="cta-btn">View Properties</a>
-            </div>
-        </div>
-        <!-- Property Listings -->
-    <section id="properties">
-        <h2>Our Luxury Properties</h2>
-        <div class="property-list">
-            <!-- Example Property -->
-            <div class="property-card">
-                <img src="property1.jpg" alt="Luxury Property">
-                <h3>5-Bedroom Villa in Abidjan</h3>
-                <p>Price: $1.5 Million</p>
-                <a href="#" class="cta-btn">View Details</a>
-            </div>
-            <!-- Repeat for other properties -->
-        </div>
-    </section>
 
-    <!-- About Us -->
-    <section id="about-us">
-        <h2>About Us</h2>
-        <p>At NOUVEL EBÈNE, we blend modern luxury with the rich heritage of Africa to create properties that stand the test of time. Our mission is to provide discerning clients with homes that reflect strength, beauty, and enduring value.</p>
-    </section>
+  <!-- Navbar -->
+  <nav class="navbar">
+    <div class="navbar-left">
+      <img src="logo.png" alt="NOUVEL EBÈNE Logo" class="logo" />
+    </div>
 
-    <!-- Contact Us -->
-    <section id="contact-us">
-        <h2>Contact Us</h2>
-        <form action="submit-form.php" method="POST">
-            <label for="name">Name:</label>
-            <input type="text" id="name" name="name" required>
-            <label for="email">Email:</label>
-            <input type="email" id="email" name="email" required>
-            <label for="message">Message:</label>
-            <textarea id="message" name="message" required></textarea>
-            <button type="submit" class="cta-btn">Submit</button>
-        </form>
-    </section>
+    <div class="navbar-center">
+      <input type="text" class="search-bar" placeholder="Rechercher un bien de luxe..." />
+      <button class="search-button">&#128269;</button>
+    </div>
 
-    <!-- Blog/Insights -->
-    <section id="blog">
-        <h2>Latest Insights</h2>
-        <div class="blog-post">
-            <h3>Luxury Living in Côte d'Ivoire</h3>
-            <p>Explore the most luxurious neighborhoods and how to invest in them.</p>
-            <a href="#" class="cta-btn">Read More</a>
-        </div>
-        <!-- Repeat for other blog posts -->
-    </section>
+    <div class="navbar-right">
+      <a href="#">Rechercher</a>
+      <a href="#">Favoris</a>
+      <a href="#">Messages</a>
+      <a href="#">Estimer</a>
+      <a href="#">Profil</a>
+      <a href="#"><img src="fr-flag.png" alt="FR" class="flag-icon" /></a>
+    </div>
+  </nav>
 
-    <!-- Client Testimonials -->
-    <section id="testimonials">
-        <h2>What Our Clients Say</h2>
-        <div class="testimonial">
-            <p>"The level of craftsmanship and attention to detail is unparalleled. I am proud to call my property from NOUVEL EBÈNE my home." - Jeanine</p>
-        </div>
-        <!-- Repeat for other testimonials -->
-    </section>
+  <!-- Hero Section -->
+  <header class="hero">
+    <video class="hero-video" autoplay muted loop>
+      <source src="your-video.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+    <div class="hero-text">
+      <h1>Discover Timeless Luxury, Rooted in African Excellence</h1>
+      <p>Explore the finest luxury homes that blend modern design with African heritage.</p>
+      <a href="#properties" class="cta-btn">View Properties</a>
+    </div>
+  </header>
 
-    <!-- Footer -->
-    <footer id="footer">
-        <div class="social-media">
-            <a href="https://www.instagram.com/nouvel-ebene" target="_blank">Instagram</a>
-            <a href="https://www.linkedin.com/company/nouvel-ebene" target="_blank">LinkedIn</a>
-        </div>
-        <p>&copy; 2025 NOUVEL EBÈNE. All Rights Reserved.</p>
-    </footer>
+  <!-- Properties Section -->
+  <section id="properties">
+    <h2>Our Luxury Properties</h2>
+    <div class="property-list">
+      <div class="property-card">
+        <img src="property1.jpg" alt="Luxury Property">
+        <h3>5-Bedroom Villa in Abidjan</h3>
+        <p>Price: $1.5 Million</p>
+        <a href="#" class="cta-btn">View Details</a>
+      </div>
+      <!-- Add more properties as needed -->
+    </div>
+  </section>
 
-    <script src="script.js"></script>
+  <!-- About Us -->
+  <section id="about-us">
+    <h2>About Us</h2>
+    <p>At NOUVEL EBÈNE, we blend modern luxury with the rich heritage of Africa to create properties that stand the test of time. Our mission is to provide discerning clients with homes that reflect strength, beauty, and enduring value.</p>
+  </section>
+
+  <!-- Contact Us -->
+  <section id="contact-us">
+    <h2>Contact Us</h2>
+    <form action="submit-form.php" method="POST">
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name" required>
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required>
+      <label for="message">Message:</label>
+      <textarea id="message" name="message" required></textarea>
+      <button type="submit" class="cta-btn">Submit</button>
+    </form>
+  </section>
+
+  <!-- Blog/Insights -->
+  <section id="blog">
+    <h2>Latest Insights</h2>
+    <div class="blog-post">
+      <h3>Luxury Living in Côte d'Ivoire</h3>
+      <p>Explore the most luxurious neighborhoods and how to invest in them.</p>
+      <a href="#" class="cta-btn">Read More</a>
+    </div>
+  </section>
+
+  <!-- Testimonials -->
+  <section id="testimonials">
+    <h2>What Our Clients Say</h2>
+    <div class="testimonial">
+      <p>"The level of craftsmanship and attention to detail is unparalleled. I am proud to call my property from NOUVEL EBÈNE my home." - Jeanine</p>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer id="footer">
+    <div class="social-media">
+      <a href="https://www.instagram.com/nouvel-ebene" target="_blank">Instagram</a>
+      <a href="https://www.linkedin.com/company/nouvel-ebene" target="_blank">LinkedIn</a>
+    </div>
+    <p>&copy; 2025 NOUVEL EBÈNE. All Rights Reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
 </body>
 </html>
